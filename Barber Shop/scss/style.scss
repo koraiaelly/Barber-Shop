@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+
+@import "./_settings";
+@import "./_common-styles";
+@import "./blocks/_header";
+@import "./blocks/_section-about-us";
+@import "./blocks/_section-services";
+@import "./blocks/_section-team";
+@import "./blocks/_section-appointment";
+@import "./blocks/_section-popular";
+@import "./blocks/_section-reviews";
+@import "./blocks/_section-info";
+@import "./blocks/_section-footer";
+@import "./blocks/shop/_shop-about-us";
+@import "./blocks/shop/_shop-filters";
+
+
+

@@ -1,0 +1,219 @@
+
+.modal__content-appointment {
+    position: relative;
+}
+
+.appointment__box-input {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.appointment__box--margin {
+    margin-bottom: 25px;
+}
+
+//////////////
+
+.squared-box {
+  margin: 0;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.squared-box:last-child {
+  margin-bottom: 0;
+}
+
+.squared-box label {
+  width: 18px;
+  height: 18px;
+  order: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  border: 2px solid #000000;
+}
+
+.squared-box label:after {
+    content: "";
+    width: 9px;
+    height: 4px;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    border: 2px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.squared-box input[type=checkbox] {
+  visibility: hidden;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.squared-box input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+.squared-box input[type=checkbox]:checked + label {
+  background: #FF7A00;
+  border: 2px solid #FF7A00;
+}
+
+/*.squared-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #6F6E6D;
+}*/
+
+////////////////
+
+.circle-box {
+    margin: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .circle-box:last-child {
+    margin-bottom: 0;
+  }
+  
+  .circle-box label {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    order: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #000000;
+  }
+  
+  .circle-box label:after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        border-radius: 50%;
+        background-color: #FF7A00;
+        border-top: none;
+        border-right: none;
+        opacity: 0;
+  }
+  
+  .circle-box  input[type=radio] {
+    visibility: hidden;
+    margin: 0;
+    margin-right: 15px;
+  }
+  
+  .circle-box input[type=radio]:checked + label:after {
+    opacity: 1;
+  }
+  
+  .circle-box  input[type=radio]:checked + label {
+    background: white;
+    border: 2px solid black;
+  }
+
+  .squared-box__mibile-hidden {
+    display: none;
+}
+
+  @media (min-width:760px) {
+
+    .appointment {
+        position: relative;
+        z-index: 2;
+    
+        
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, .5);
+            z-index: -1;
+        }
+    }
+
+    .modal__form-box {
+      display:flex;
+      flex-direction: column;
+      width: 290px;
+    }
+
+    .modal__form-box__main {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .appointment {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-right: 40px;
+        padding-left: 40px;
+        @include bg-standart;
+        background-image: url('../img/background/appointmentbg_tablet.png');
+    }
+
+    .modal__content-appointment {
+        @include margin-auto;
+        background-color: #ffffff;
+        width: 690px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+
+    .modal__content__box {
+        width: 375px;
+        @include margin-auto;
+    }
+
+    .appointment__box-input {
+        display: block;
+        column-count: 2;
+        column-gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .squared-box__mibile-hidden {
+        display: flex;
+    }
+    
+  }
+
+  @media (min-width: 1140px) {
+
+    .modal__content-appointment {
+        width: 855px;
+        padding-top: 65px;
+        padding-bottom: 65px;
+        padding-right: 125px;
+        padding-left: 125px;
+    }
+
+}

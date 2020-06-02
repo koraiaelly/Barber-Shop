@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<title>Barber Shop</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__wrapper">
+				<button class="burger-btn burger-open">
+					<svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M0.0015191 1.88911C0.0015191 0.907267 0.797458 0.111328 1.7793 0.111328H26.8169C27.7988 0.111328 28.5947 0.907267 28.5947 1.88911C28.5947 2.87095 27.7988 3.66689 26.8169 3.66689H1.7793C0.797456 3.66689 0.0015191 2.87095 0.0015191 1.88911ZM0.00143433 9C0.00143433 8.01816 0.797373 7.22222 1.77921 7.22222H26.8168C27.7987 7.22222 28.5946 8.01816 28.5946 9C28.5946 9.98184 27.7987 10.7778 26.8168 10.7778H1.77921C0.797371 10.7778 0.00143433 9.98184 0.00143433 9ZM1.77921 14.3333C0.797373 14.3333 0.00143433 15.1293 0.00143433 16.1111C0.00143433 17.093 0.797371 17.8889 1.77921 17.8889H26.8168C27.7987 17.8889 28.5946 17.093 28.5946 16.1111C28.5946 15.1293 27.7987 14.3333 26.8168 14.3333H1.77921Z" fill="white"/>
+					</svg>
+				</button>
+				<div class="header__center">
+					<a href="/" class="header__link">
+							<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15.1454 11.732C16.0216 9.0142 18.6367 7 21.7965 7C24.9562 7 27.5713 9.0142 28.4475 11.732L21.7965 11.732L15.1454 11.732ZM30.5823 11.9856C30.5646 11.9007 30.5456 11.8161 30.5254 11.732C29.597 7.87335 26.0413 5 21.7965 5C17.5517 5 13.9959 7.87335 13.0676 11.7321C13.0473 11.8161 13.0284 11.9007 13.0106 11.9856H4.50023C4.17694 11.9856 3.93864 12.2878 4.01401 12.6022L10.0548 37.7984C10.1087 38.0232 10.3098 38.1818 10.541 38.1818H33.0521C33.2833 38.1818 33.4844 38.0232 33.5383 37.7984L39.579 12.6022C39.6544 12.2878 39.4161 11.9856 39.0928 11.9856H30.5823ZM14.8313 13.7321L12.8313 13.7321H6.0214L11.3726 36.052C11.4265 36.2768 11.6276 36.4354 11.8588 36.4354H31.7342C31.9655 36.4354 32.1666 36.2768 32.2205 36.052L37.5717 13.7321L14.8313 13.7321Z" fill="white"/>
+							</svg>              
+					</a>
+					<span class="header__text">
+							0
+					</span>
+				</div>
+				<div class="burger">
+					<div class="burger__content">
+						<a href="/" class="logo">
+								<img src="./img/elements/logo_mobile.png" width="110px" height="36px" alt="logo of company Barber Shop">
+						</a>
+						<nav class="navigation navigation__burger--content">
+								<a href="/" class="link link--active link__navigation">Home</a>
+								<a href="/" class="link link__navigation">Shop</a>
+								<a href="/" class="link">Gallery</a>
+						</nav>
+						<div  class="header__right">
+							<div class="header__center-desktop--show">
+								<a href="/" class="header__link">
+										<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M15.1454 11.732C16.0216 9.0142 18.6367 7 21.7965 7C24.9562 7 27.5713 9.0142 28.4475 11.732L21.7965 11.732L15.1454 11.732ZM30.5823 11.9856C30.5646 11.9007 30.5456 11.8161 30.5254 11.732C29.597 7.87335 26.0413 5 21.7965 5C17.5517 5 13.9959 7.87335 13.0676 11.7321C13.0473 11.8161 13.0284 11.9007 13.0106 11.9856H4.50023C4.17694 11.9856 3.93864 12.2878 4.01401 12.6022L10.0548 37.7984C10.1087 38.0232 10.3098 38.1818 10.541 38.1818H33.0521C33.2833 38.1818 33.4844 38.0232 33.5383 37.7984L39.579 12.6022C39.6544 12.2878 39.4161 11.9856 39.0928 11.9856H30.5823ZM14.8313 13.7321L12.8313 13.7321H6.0214L11.3726 36.052C11.4265 36.2768 11.6276 36.4354 11.8588 36.4354H31.7342C31.9655 36.4354 32.1666 36.2768 32.2205 36.052L37.5717 13.7321L14.8313 13.7321Z" fill="white"/>
+										</svg>              
+								</a>
+								<span class="header__text">
+										0
+								</span>
+							</div>
+							<button class="btn header__right__btn text text--white text--bold modal-open">
+									CONTACT US
+							</button>
+							<button class="btn header__right__btn btn--orange text text--white page-header__order-call">
+									BOOK NOW
+							</button>
+							<button class="btn--close btn--close--white text--bold burger__close btn--nodesktop" type="button">
+									×
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	<section class="about-us shop__about-us">
+		<div class="wrapper">
+			<div class="shop__container">
+				<p class="shop__text--sale text--black text--bold">
+					- 50<span class="shop__text--percent text--black text--bold">%</span>
+				</p>
+				<p class="shop__text--brand text--black text--bold text--uppercase">
+					brandy sale
+				</p>
+			</div>
+		</div>
+</section>
+<section class="filter">
+	<div class="wrapper">
+		<div class="filter__input-box filter__input-box--margin">
+			<input type="text" class="text input input__filter input__filter--rmargin" placeholder="Search something you need...">  
+			<button class="btn btn--orange text text--white btn__filter-mobile-hidden text--uppercase text--bold">
+				Search
+			</button>  
+		</div>
+		<div class="filter__box filter__box-desktop-hidden">
+			<button class="btn__filter text text--orange text--bold text--uppercase text--orange--big filter-open">
+				Filters
+				<svg width="25" class="btn__filter__icon" height="21" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0163 18H14.0229V16H10.0163V18ZM3.00488 6V8H21.0343V6H3.00488ZM6.00978 13H18.0294V11H6.00978V13Z" fill="#FF7A00"/>
+				</svg>
+			</button>
+			<div class="filter__sorting-box">
+				<select class="filter__sorting-list text text--black">
+					<option value="None" selected disabled>
+						
+					</option>
+					<option value="List">
+						List
+					</option>
+					<option value="Title">
+						Title
+					</option>
+					<option value="Images">
+						Images
+					</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</section>
+<div >
+	<div class="wrapper shop__catalog-wrapper">
+		<div class="filter__modal">
+			<section class="filter__content">
+				<form class="filter__form" action="https://fom.in.ua/echo" method="POST">
+					<div class="appointment__box--margin">
+						<h2 class="text--orange text--bold text--indent text--orange--big filter__title-desktop-show">
+							Filters
+							<svg width="25" class="btn__filter__icon" height="21" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0163 18H14.0229V16H10.0163V18ZM3.00488 6V8H21.0343V6H3.00488ZM6.00978 13H18.0294V11H6.00978V13Z" fill="#FF7A00"/>
+							</svg>
+						</h2>
+						<h2 class="text text--orange text--bold label--modal text--indent text--filter">
+							Choose something:
+						</h2>
+						<div class="appointment__box-input filter__box">
+							<div class="squared-box">
+								<input type="checkbox" id="squared-box1" checked>
+								<label for="squared-box1"></label>
+								<span class="text text--black text">Choose something</span>
+							</div>
+							<div class="squared-box">
+								<input type="checkbox" id="squared-box2"checked>
+								<label for="squared-box2"></label>
+								<span class="text text--black">Choose something</span>
+							</div>
+							<div class="squared-box">
+								<input type="checkbox" id="squared-box3"  checked>
+								<label for="squared-box3"></label>
+								<span class="text text--black">Choose something</span>
+							</div>
+							<div class="squared-box">
+								<input type="checkbox" id="squared-box4" >
+								<label for="squared-box4"></label>
+								<span class="text text--black">Choose something</span>
+							</div>
+							<div class="squared-box squared-box__mibile-hidden">
+								<input type="checkbox" id="squared-box5">
+								<label for="squared-box5"></label>
+								<span class="text text--black">Choose something</span>
+							</div>
+							<div class="squared-box squared-box__mibile-hidden">
+								<input type="checkbox" id="squared-box6">
+								<label for="squared-box6"></label>
+								<span class="text text--black">Choose something</span>
+							</div>
+						</div>
+					</div>
+					<div class="appointment__box appointment__box--margin">
+						<h2 class="text text--orange text--bold label--modal text--indent text--filter">
+							Choose something:
+						</h2>
+						<div class="appointment__box-input filter__box">
+							<div class="circle-box">
+								<input type="radio" id="circle-box1" name="1" value="12" checked>
+								<label for="circle-box1"></label>
+								<span class="text text--black text">Choose something</span>
+							</div>
+							<div class="circle-box">
+								<input type="radio" id="circle-box2" name="1" value="13" checked>
+								<label for="circle-box2"></label>
+								<span class="text text--black">Choose something</span>
+							</div>
+							<div class="circle-box">
+								<input type="radio" id="circle-box3"  name="1" value="14" checked>
+								<label for="circle-box3"></label>
+								<span class="text text--black">Choose something</span>
+							</div>
+							<div class="circle-box">
+								<input type="radio" id="circle-box4" name="1" value="15">
+								<label for="circle-box4"></label>
+								<span class="text text--black">Choose something</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h2 class="text text-black label--modal text--indent text--filter">
+							Choose a master:
+						</h2>
+						<div class="price-box">
+							<span class="price-line"></span>
+							<div class="price-handle price-handle-from">
+								<input type="text" value="800" class="value-price text text--black text--bold" min="0" max="1000">  
+								<button class="rnd-btn"></button>
+							</div>
+							<div class="price-handle price-handle-to">
+								<input type="text" value="60" class="value-price text text--black text--bold" min="0" max="1000">  
+								<button class="rnd-btn"></button>
+							</div>
+						</div>
+						<div class="price-box__range ">
+							<label class="price-box__range-item text text--black">
+								From:
+								<input type="text" id="from" value="60" class="price-box__range-input text text--black text--bold">
+							</label>
+							<label class="price-box__range-item text text--black">
+								To:
+								<input type="text" id="to" value="800" class="price-box__range-input text text--black text--bold">
+							</label>
+							
+						</div>
+					</div>
+					<div class="modal__button-box"> 
+						<button class="btn__catalog text text--black text--bold" type="submit">
+							SHOW
+						</button>
+					</div>
+				</form>
+				<button class="btn__filter--close btn--close--black filter__close" type="button">
+						×
+				</button>
+			</section>
+		</div>
+		<section class="popular shop__popular">
+			<div class="wrapper">
+				<div class="catalog">
+		
+					<div class="catalog__container catalog__container--rmargin--desktop">
+						<img src="./img/elements/oil_mobile.png" class="catalog__item" alt="Photo of Product" width="245px" height="221px">
+						<p class="text text--black text--bold text--margin">
+							Barbers
+						</p>
+						<p class="text text--black text--margin">
+							Premium beard balm 
+							<br>
+							50 ml 
+							<br>
+							New york original
+						</p>
+						<p class="text text--orange text--bold text--margin">
+							$ 490.00
+						</p>
+						<div class="catalog__btn-box catalog__btn-box--margin">
+							<button class="btn text text--black text--bold btn__catalog">
+								SHOP NOW
+							</button>
+							<button class="btn__catalog text--black text--bold">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0001 2V22" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+									<path d="M2 12L22 12" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+		
+					<div class="catalog__container catalog__container--rmargin--desktop">
+						<img src="./img/elements/oil_mobile.png" class="catalog__item" alt="Photo of Product" width="245px" height="221px">
+						<p class="text text--black text--bold text--margin">
+							Barbers
+						</p>
+						<p class="text text--black text--margin">
+							Premium beard balm 
+							<br>
+							50 ml 
+							<br>
+							New york original
+						</p>
+						<p class="text text--orange text--bold text--margin">
+							$ 490.00
+						</p>
+						<div class="catalog__btn-box catalog__btn-box--margin">
+							<button class="btn text text--black text--bold btn__catalog">
+								SHOP NOW
+							</button>
+							<button class="btn__catalog text--black text--bold">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0001 2V22" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+									<path d="M2 12L22 12" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+		
+					<div class="catalog__container">
+						<img src="./img/elements/oil_mobile.png" class="catalog__item" alt="Photo of Product" width="245px" height="221px">
+						<p class="text text--black text--bold text--margin">
+							Barbers
+						</p>
+						<p class="text text--black text--margin">
+							Premium beard balm 
+							<br>
+							50 ml 
+							<br>
+							New york original
+						</p>
+						<p class="text text--orange text--bold text--margin">
+							$ 490.00
+						</p>
+						<div class="catalog__btn-box catalog__btn-box--margin">
+							<button class="btn text text--black text--bold btn__catalog">
+								SHOP NOW
+							</button>
+							<button class="btn__catalog text--black text--bold">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0001 2V22" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+									<path d="M2 12L22 12" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+		
+					<div class="catalog__container catalog__container--rmargin--desktop">
+						<img src="./img/elements/oil_mobile.png" class="catalog__item" alt="Photo of Product" width="245px" height="221px">
+						<p class="text text--black text--bold text--margin">
+							Barbers
+						</p>
+						<p class="text text--black text--margin">
+							Premium beard balm 
+							<br>
+							50 ml 
+							<br>
+							New york original
+						</p>
+						<p class="text text--orange text--bold text--margin">
+							$ 490.00
+						</p>
+						<div class="catalog__btn-box catalog__btn-box--margin">
+							<button class="btn text text--black text--bold btn__catalog">
+								SHOP NOW
+							</button>
+							<button class="btn__catalog text--black text--bold">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0001 2V22" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+									<path d="M2 12L22 12" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+		
+					<div class="catalog__container catalog__container__mobile-hidden catalog__container--rmargin--desktop">
+						<span class="catalog__container-attention text text--white text--bold">
+							SALE
+						</span>
+						<img src="./img/elements/oil_mobile.png" class="catalog__item" alt="Photo of Product" width="245px" height="221px">
+						<p class="text text--black text--bold text--margin">
+							Barbers
+						</p>
+						<p class="text text--black text--margin">
+							Premium beard balm 
+							<br>
+							50 ml 
+							<br>
+							New york original
+						</p>
+						<p class="text text--orange text--bold text--margin">
+							$ 490.00
+						</p>
+						<div class="catalog__btn-box catalog__btn-box--margin">
+							<button class="btn text text--black text--bold btn__catalog">
+								SHOP NOW
+							</button>
+							<button class="btn__catalog text--black text--bold">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0001 2V22" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+									<path d="M2 12L22 12" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+		
+					<div class="catalog__container catalog__container__mobile-hidden">
+						<img src="./img/elements/oil_mobile.png" class="catalog__item" alt="Photo of Product" width="245px" height="221px">
+						<p class="text text--black text--bold text--margin">
+							Barbers
+						</p>
+						<p class="text text--black text--margin">
+							Premium beard balm 
+							<br>
+							50 ml 
+							<br>
+							New york original
+						</p>
+						<p class="text text--orange text--bold text--margin">
+							$ 490.00
+						</p>
+						<div class="catalog__btn-box catalog__btn-box--margin">
+							<button class="btn text text--black text--bold btn__catalog">
+								SHOP NOW
+							</button>
+							<button class="btn__catalog text--black text--bold">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0001 2V22" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+									<path d="M2 12L22 12" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="catalog__arrows catalog__arrows__mobile--show">
+						<button class="catalog__arrows-btn">
+							<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M31 36L21 26L31 16" stroke="#FF7A00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+						<button class="catalog__arrows-btn">
+							<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M21 36L31 26L21 16" stroke="#FF7A00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+<section class="popular">
+	<div class="wrapper">
+		<h2 class="title title__popular">
+			Popular Products
+		</h2>
+		<div class="catalog">
+
+			<div class="catalog__container catalog__container__mobile-hidden">
+				<img src="./img/elements/oil_mobile.png" class="catalog__item" alt="Photo of Product" width="245px" height="221px">
+				<p class="text text--black text--bold text--margin">
+					Barbers
+				</p>
+				<p class="text text--black text--margin">
+					Premium beard balm 
+					<br>
+					50 ml 
+					<br>
+					New york original
+				</p>
+				<p class="text text--orange text--bold text--margin">
+					$ 490.00
+				</p>
+				<div class="catalog__btn-box catalog__btn-box--margin">
+					<button class="btn text text--black text--bold btn__catalog">
+						SHOP NOW
+					</button>
+					<button class="btn__catalog text--black text--bold">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.0001 2V22" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+							<path d="M2 12L22 12" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="catalog__container catalog__container__mobile-hidden">
+				<img src="./img/elements/oil_mobile.png" class="catalog__item" alt="Photo of Product" width="245px" height="221px">
+				<p class="text text--black text--bold text--margin">
+					Barbers
+				</p>
+				<p class="text text--black text--margin">
+					Premium beard balm 
+					<br>
+					50 ml 
+					<br>
+					New york original
+				</p>
+				<p class="text text--orange text--bold text--margin">
+					$ 490.00
+				</p>
+				<div class="catalog__btn-box catalog__btn-box--margin">
+					<button class="btn text text--black text--bold btn__catalog">
+						SHOP NOW
+					</button>
+					<button class="btn__catalog text--black text--bold">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.0001 2V22" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+							<path d="M2 12L22 12" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="catalog__container catalog__container__mobile-hidden">
+				<span class="catalog__container-attention text text--white text--bold">
+					SALE
+				</span>
+				<img src="./img/elements/oil_mobile.png" class="catalog__item" alt="Photo of Product" width="245px" height="221px">
+				<p class="text text--black text--bold text--margin">
+					Barbers
+				</p>
+				<p class="text text--black text--margin">
+					Premium beard balm 
+					<br>
+					50 ml 
+					<br>
+					New york original
+				</p>
+				<p class="text text--orange text--bold text--margin">
+					$ 490.00
+				</p>
+				<div class="catalog__btn-box catalog__btn-box--margin">
+					<button class="btn text text--black text--bold btn__catalog">
+						SHOP NOW
+					</button>
+					<button class="btn__catalog text--black text--bold">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.0001 2V22" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+							<path d="M2 12L22 12" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="catalog__container catalog__container__mobile-hidden">
+				<img src="./img/elements/oil_mobile.png" class="catalog__item" alt="Photo of Product" width="245px" height="221px">
+				<p class="text text--black text--bold text--margin">
+					Barbers
+				</p>
+				<p class="text text--black text--margin">
+					Premium beard balm 
+					<br>
+					50 ml 
+					<br>
+					New york original
+				</p>
+				<p class="text text--orange text--bold text--margin">
+					$ 490.00
+				</p>
+				<div class="catalog__btn-box catalog__btn-box--margin">
+					<button class="btn text text--black text--bold btn__catalog">
+						SHOP NOW
+					</button>
+					<button class="btn__catalog text--black text--bold">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.0001 2V22" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+							<path d="M2 12L22 12" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="wrapper wrapper__footer">
+		<a href="/" class="logo logo__footer">
+			<img src="./img/elements/logo_mobile.png" width="110px" height="36px" alt="logo of company Barber Shop">
+		</a>
+		<div class="footer__box">
+			<nav class="navigation__footer footer__box--margin footer__box--nomargin">
+				<a href="/" class="link link--active nav__footer-link text--thin">Home</a>
+				<a href="/" class="link nav__footer-link text--thin" >Shop</a>
+				<a href="/" class="link text--thin nav__footer-link">Gallery</a>
+				<a href="/" class="link text--thin">Contact Us</a>
+			</nav>
+			<div class="footer__box--margin footer__box--nomargin">
+				<h2 class="text text--white text--margin text--uppercase">
+					Visit us
+				</h2>
+				<p class="text--white text--margin text--thin">
+					Ukraine, Kyiv
+				</p>
+				<p class="text--white text--thin">
+					str. Oleshi 15, 62000
+				</p>
+			</div>
+			<div class="footer__box--margin footer__box--nomargin">   
+				<h2 class="text text--white text--margin text--uppercase">
+					Contact us
+				</h2>
+				<a href="support@gmail.com" class="footer__link text--white text--margin text--thin">
+					support@gmail.com
+				</a>
+				<a href="+38 (044) 15 25 66 954" class="footer__link text--white text--thin">
+					+38 (044) 15 25 66 954
+				</a>
+			</div>
+			<div class="footer__follow">
+				<h2 class="text text--white text--margin text--uppercase">
+					Follow us
+				</h2>
+				<div>
+					<a href="www.instagram.com" class="social-network">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10 17.5C7.8 17.5 7.5 17.5 6.66667 17.45C6.06332 17.4381 5.46621 17.3254 4.9 17.1167C4.4466 16.9435 4.03485 16.6765 3.69166 16.3333C3.34846 15.9901 3.08154 15.5784 2.90833 15.125C2.6883 14.5524 2.56713 13.9465 2.55 13.3333C2.5 12.5 2.5 12.2083 2.5 10C2.5 7.79167 2.5 7.5 2.55 6.66667C2.56192 6.06332 2.67459 5.46621 2.88333 4.9C3.05357 4.44198 3.31915 4.02535 3.6625 3.67769C4.00586 3.33003 4.41914 3.05927 4.875 2.88333C5.44911 2.67183 6.0549 2.55913 6.66667 2.55C7.5 2.5 7.79167 2.5 10 2.5C12.2083 2.5 12.5 2.5 13.3333 2.55C13.9367 2.56192 14.5338 2.67459 15.1 2.88333C15.5534 3.05654 15.9651 3.32346 16.3083 3.66666C16.6515 4.00985 16.9185 4.4216 17.0917 4.875C17.3117 5.44762 17.4329 6.05346 17.45 6.66667C17.45 7.5 17.5 7.825 17.5 10C17.5 12.175 17.5 12.5 17.45 13.3333C17.4381 13.9367 17.3254 14.5338 17.1167 15.1C16.9435 15.5534 16.6765 15.9651 16.3333 16.3083C15.9901 16.6515 15.5784 16.9185 15.125 17.0917C14.5588 17.3004 13.9617 17.4131 13.3583 17.425C12.5 17.5 12.2 17.5 10 17.5Z" stroke="#f3f3f3" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M10 12.5485C9.49594 12.5485 9.00318 12.399 8.58405 12.119C8.16493 11.8389 7.83826 11.4409 7.64536 10.9752C7.45246 10.5095 7.40199 9.997 7.50033 9.50261C7.59867 9.00822 7.8414 8.55409 8.19784 8.19766C8.55428 7.84122 9.0084 7.59849 9.50279 7.50014C9.99718 7.4018 10.5096 7.45228 10.9753 7.64518C11.441 7.83808 11.8391 8.16475 12.1191 8.58387C12.3992 9.003 12.5487 9.49575 12.5487 9.99983C12.5487 10.6758 12.2801 11.324 11.8022 11.802C11.3242 12.28 10.676 12.5485 10 12.5485Z" stroke="#f3f3f3" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M14.9225 5.55371C14.9225 5.82985 14.6986 6.05371 14.4225 6.05371C14.1463 6.05371 13.9225 5.82985 13.9225 5.55371C13.9225 5.27757 14.1463 5.05371 14.4225 5.05371C14.6986 5.05371 14.9225 5.27757 14.9225 5.55371Z" stroke="#f3f3f3"/>
+						</svg>
+					</a>
+					<a href="www.youtube.com" class="social-network">
+						<svg width="20" height="20" viewBox="0 0 20 20"  fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.29 4C17.29 3 13.49 3 10 3C6.51 3 2.67 3 1.72 4C0.77 5 0.5 6.09 0.5 10C0.5 13.91 0.77 15.06 1.72 16C2.67 16.94 6.52 17 10 17C13.48 17 17.33 17 18.29 16C19.25 15 19.5 13.89 19.5 10C19.5 6.11 19.24 4.94 18.29 4ZM13.35 10.18L7.8 13.38C7.65 13.46 7.54 13.38 7.54 13.22V6.78C7.54 6.61 7.66 6.54 7.8 6.62L13.35 9.84C13.5 9.94 13.5 10.08 13.35 10.16V10.18Z" stroke="#f3f3f3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+					<a href="www.facebook.com" class="social-network">
+						<svg width="20" height="20" viewBox="0 0 20 20"  fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.52619 6.56634V8.04002H6.31567V10.5158H8.52619V17H11.1125V10.5158H13.323L13.6546 8.06949H11.083V6.59581C11.083 5.39476 11.7757 5.29161 12.2841 5.29161H13.6841V3.08108C13.6841 3.08108 12.7409 3.00003 11.4736 3.00003C9.67567 2.99266 8.52619 4.23792 8.52619 6.56634Z" stroke="#f3f3f3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>    
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="modal">
+	<section class="modal__content">
+			<div class="modal__content__box">
+					<h2 class="title--black text--margin">
+							CONTACT US!
+					</h2>
+					<p class="text text-black">
+							Please leave your details and our manager will contact you within an hour
+					</p>
+			</div>
+			<form class="modal__form" action="https://fom.in.ua/echo" method="POST">
+					<label class="text text-black label--modal" for="modal-name">
+							Name:
+					</label> 
+					<input class="input input--modal" id="modal-name" type="text"  name="name" placeholder="Gregory Simmmons">
+					<label class="text text-black label--modal " for="modal-phone">
+							Email:
+					</label>
+					<input class="input input--modal" id="modal-phone" type="text" name="phone" placeholder="dwight.fleming@example.com">
+					<label class="text text-black label--modal">
+							Phone:
+					</label>
+					<input class="input input--modal" id="modal-phone" type="text"  name="phone" placeholder="(307) 555-0133">
+					<label for="text-area"class="text text-black label--modal">
+							Your comment:
+					</label>
+					<textarea class="input input--modal label--modal" name="comment" id="text-area" cols="10" rows="5" placeholder="Please leave your comment..."></textarea>
+					<div class="modal__button-box"> 
+							<button class="btn btn--orange text text--white" type="submit">
+									Contact me
+							</button>
+					</div>
+			</form>
+			<button class="btn--close btn--close--black modal__close" type="button">
+					×
+			</button>
+	</section>
+</div>
+</section>
+
+	<script>
+		var modalLink = document.getElementsByClassName("modal-open");
+		var modalPopup = document.querySelector(".modal");
+		var modalClose = document.querySelector(".modal__close");
+
+		for (var i = 0; i < modalLink.length; i++) {
+		modalLink[i].addEventListener("click", function(evt) {
+			evt.preventDefault();
+			modalPopup.classList.add("modal--show");
+		});
+		}
+
+		modalClose.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		modalPopup.classList.remove("modal--show");
+		});
+
+	</script>
+	<script>
+		var modalLink = document.getElementsByClassName("filter-open");
+		var modalContact = document.querySelector(".filter__modal");
+		var modalClose = document.querySelector(".filter__close");
+
+		for (var i = 0; i < modalLink.length; i++) {
+		modalLink[i].addEventListener("click", function(evt) {
+			evt.preventDefault();
+			modalContact.classList.add("filter--show");
+		});
+		}
+
+		modalClose.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		modalContact.classList.remove("filter--show");
+	});
+
+	</script>
+	<script>
+		var modalLink = document.getElementsByClassName("burger-open");
+		var modalMenu = document.querySelector(".burger");
+		var modalClose = document.querySelector(".burger__close");
+
+		for (var i = 0; i < modalLink.length; i++) {
+		modalLink[i].addEventListener("click", function(evt) {
+			evt.preventDefault();
+			modalMenu.classList.add("burger--show");
+		});
+		}
+
+		modalClose.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		modalMenu.classList.remove("burger--show");
+		});
+	</script>
+	</body>
+</html>

@@ -1,0 +1,207 @@
+//fonts
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Hairline'), local('Montserrat-Hairline'), url('../fonts/montserrathairline.woff2') format('woff2'), url('../fonts/montserrathairline.woff') format('woff'), url('../fonts/montserrathairline.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Light'), local('Montserrat-Light'), url('../fonts/montserratlight.woff2') format('woff2'), url('../fonts/montserratlight.woff') format('woff'), url('../fonts/montserratlight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), local('Montserrat-Regular'), url('../fonts/montserrat.woff2') format('woff2'), url('../fonts/montserrat.woff') format('woff'), url('../fonts/montserrat.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserratbold.woff2') format('woff2'), url('../fonts/montserratbold.woff') format('woff'), url('../fonts/montserratbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Black'), local('Montserrat-Black'), url('../fonts/montserratblack.woff2') format('woff2'), url('../fonts/montserratblack.woff') format('woff'), url('../fonts/montserratblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+//class
+
+/////fonts
+
+//variables
+//color
+$btnColor: #fff;
+$Color: #fff;
+$btnActiveColor: #fb0275;
+$title: #7f38bd;
+$sabtitle: #383d52;
+$text: #5e606a;
+$burgerColor: #333333;
+// section about us
+$titleSchemeColor: #5e606a;
+///// section about us
+// section comment
+$linkCardColor: #3594dd;
+////// section comment
+
+// section footer
+
+////// section-footer
+
+/////color
+/////variables
+
+//extend
+%wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+%background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+%text-dec {
+  text-decoration: none;
+}
+
+%text-transform {
+  text-transform: uppercase;
+}
+
+%transition {
+  transition: 0.5s;
+}
+
+%btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+//display flex
+%flex-js_sp-bet {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flex-js_cent {
+  display: flex;
+  justify-content: center;
+}
+
+%flex-direct_colum {
+  display: flex;
+  flex-direction: column;
+}
+
+%Flex-alit_cent {
+  display: flex;
+  align-items: center;
+}
+
+%flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%flex-js_cent-alit_cent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-fl_colum-alit_cent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+%flex-js_sp-bet-alit_cent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// %flex-alself-alit {
+//   display: flex;
+//   align-self: flex-end;
+//   align-items: flex-end;
+// }
+
+/////extend
+
+//mixin
+@mixin MullerHeavy($fs, $lh) {
+  font-family: "Muller - Heavy", sans-serif;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin MullerBold($fs, $lh) {
+  font-family: "Muller - Bold", sans-serif;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin MullerMedium($fs, $lh) {
+  font-family: "Muller -Medium", sans-serif;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin MullerExtraBold($fs, $lh) {
+  font-family: "Muller - Extra Bold", sans-serif;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin OpenSansItalic($fs, $lh) {
+  font-family: "Open Sans - Italic", sans-serif;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin OpenSansRegular($fs, $lh) {
+  font-family: "Open Sans - Regular", sans-serif;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin OpenSansSemiBold($fs, $lh) {
+  font-family: "Open Sans - Semi Bold", sans-serif;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin OpenSansExtraBold($fs, $lh) {
+  font-family: "Open Sans - Extra Bold", sans-serif;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin w_h($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+// @mixin w-min_h ($w, $min-h) {
+//   width: $w;
+//   min-height: $min-h;
+// }
+
+/////mixin

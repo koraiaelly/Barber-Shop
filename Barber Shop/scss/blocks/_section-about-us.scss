@@ -1,0 +1,37 @@
+.about-us {
+    @include bg-standart;
+    padding-top: 135px;
+    padding-bottom: 45px;
+    background-color: rgb(0, 0, 0);
+    background-image: url('../img/background/salebg_tablet.png');
+
+    &__logo {
+        display: block;
+
+        &--margin {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width:760px) {
+    .about-us {
+        background-image: url('../img/background/mainbg_tablet.png');
+
+
+        &__container {
+            width: 410px;
+        }
+    }
+}
+
+@media (min-width:1140px) {
+    .about-us {
+        background-image: url('../img/background/mainbg_desktop.png');
+
+
+       /* &__container {
+            width: 410px;
+        }*/
+    }
+}
